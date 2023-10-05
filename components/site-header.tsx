@@ -24,7 +24,7 @@ export function SiteHeader() {
     event.preventDefault()
     const formData = new FormData(event.currentTarget)
     const searchQuery = formData.get('search')
-    router.replace(`/?search =${searchQuery}`) 
+    router.replace(`/?search=${searchQuery}`) 
   }
 
   return (
@@ -36,7 +36,7 @@ export function SiteHeader() {
             id="search"
             name="search"
             type="search"
-            autoComplete="off"
+            autoComplete="on"
             placeholder="Search products..."
             className="h-9 lg:w-[300px]"
             defaultValue={defaultSearchQuery}
