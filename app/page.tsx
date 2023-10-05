@@ -3,11 +3,11 @@ import { groq } from "next-sanity"
 
 import { SanityProduct } from "@/config/inventory"
 import { siteConfig } from "@/config/site"
-import {seedSanityData} from "@/lib/seed" 
 import { cn } from "@/lib/utils"
 import { ProductFilters } from "@/components/product-filters"
 import { ProductGrid } from "@/components/product-grid"
 import { ProductSort } from "@/components/product-sort"
+import { SiteHeader } from "@/components/site-header";
 
 interface Props {
   searchParams:{
@@ -48,6 +48,7 @@ export default async function Page({searchParams}: Props) {
 
   return (
     <div>
+      <SiteHeader products={products} />
       <div className="px-4 pt-20 text-center">
         <h1 className="text-4xl font-extrabold tracking-normal">{siteConfig.name}</h1>
         <p className="mx-auto mt-4 max-w-3xl text-base">{siteConfig.description}</p>

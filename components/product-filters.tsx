@@ -20,6 +20,7 @@ const filters = [
       { value: "gloves", label: "Gloves" },
       { value: "scarves", label: "Scarves" },
       { value: "wallets", label: "Wallets" },
+      {value:"hoodies", label: "Hoodies"},
     ],
   },
   {
