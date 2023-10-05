@@ -48,7 +48,7 @@ export default async function Page({searchParams}: Props) {
 
   return (
     <div>
-      <SiteHeader products={products} />
+      <SiteHeader/>
       <div className="px-4 pt-20 text-center">
         <h1 className="text-4xl font-extrabold tracking-normal">{siteConfig.name}</h1>
         <p className="mx-auto mt-4 max-w-3xl text-base">{siteConfig.description}</p>
