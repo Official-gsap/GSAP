@@ -36,7 +36,7 @@ export function SiteHeader() {
             id="search"
             name="search"
             type="search"
-            autoComplete="on"
+            autoComplete="off"
             placeholder="Search products..."
             className="h-9 lg:w-[300px]"
             defaultValue={defaultSearchQuery}
